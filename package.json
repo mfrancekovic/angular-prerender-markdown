@@ -10,7 +10,8 @@
     "dev:ssr": "ng run angular-prerender-markdown:serve-ssr",
     "serve:ssr": "node dist/angular-prerender-markdown/server/main.js",
     "build:ssr": "ng build && ng run angular-prerender-markdown:server",
-    "prerender": "ng run angular-prerender-markdown:prerender"
+    "prerender": "ng run angular-prerender-markdown:prerender",
+    "backend:start": "node backend.js"
   },
   "private": true,
   "dependencies": {
@@ -24,6 +25,7 @@
     "@angular/platform-server": "~12.2.0",
     "@angular/router": "~12.2.0",
     "@nguniversal/express-engine": "^12.1.3",
+    "@octokit/core": "^3.5.1",
     "express": "^4.15.2",
     "rxjs": "~6.6.0",
     "tslib": "^2.3.0",
