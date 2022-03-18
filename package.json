@@ -10,8 +10,8 @@
     "dev:ssr": "ng run angular-prerender-markdown:serve-ssr",
     "serve:ssr": "node dist/angular-prerender-markdown/server/main.js",
     "build:ssr": "ng build && ng run angular-prerender-markdown:server",
-    "prerender": "ng run angular-prerender-markdown:prerender",
-    "backend:start": "node backend.js"
+    "prerender": "ng run angular-prerender-markdown:prerender --no-guess-routes --routes-file routes.txt",
+    "backend": "node backend.js"
   },
   "private": true,
   "dependencies": {
